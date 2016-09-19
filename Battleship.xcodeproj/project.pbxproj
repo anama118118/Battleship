@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1ED8D76C1D8CA082007FD4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8D76B1D8CA082007FD4C7 /* AppDelegate.swift */; };
 		1ED8D76E1D8CA082007FD4C7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8D76D1D8CA082007FD4C7 /* FirstViewController.swift */; };
-		1ED8D7701D8CA082007FD4C7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8D76F1D8CA082007FD4C7 /* SecondViewController.swift */; };
-		1ED8D7731D8CA082007FD4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED8D7711D8CA082007FD4C7 /* Main.storyboard */; };
+		1ED8D7701D8CA082007FD4C7 /* Battleship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED8D76F1D8CA082007FD4C7 /* Battleship.swift */; };
 		1ED8D7751D8CA082007FD4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED8D7741D8CA082007FD4C7 /* Assets.xcassets */; };
 		1ED8D7781D8CA082007FD4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED8D7761D8CA082007FD4C7 /* LaunchScreen.storyboard */; };
+		A73436F01D8CE506004E0538 /* BattleshipBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73436EF1D8CE506004E0538 /* BattleshipBrain.swift */; };
+		A73436F21D8CE9D3004E0538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73436F11D8CE9D3004E0538 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1ED8D7681D8CA082007FD4C7 /* Battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED8D76B1D8CA082007FD4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ED8D76D1D8CA082007FD4C7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1ED8D76F1D8CA082007FD4C7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		1ED8D7721D8CA082007FD4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ED8D76F1D8CA082007FD4C7 /* Battleship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battleship.swift; sourceTree = "<group>"; };
 		1ED8D7741D8CA082007FD4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED8D7771D8CA082007FD4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ED8D7791D8CA082007FD4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A73436EF1D8CE506004E0538 /* BattleshipBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleshipBrain.swift; sourceTree = "<group>"; };
+		A73436F11D8CE9D3004E0538 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				1ED8D76B1D8CA082007FD4C7 /* AppDelegate.swift */,
 				1ED8D76D1D8CA082007FD4C7 /* FirstViewController.swift */,
-				1ED8D76F1D8CA082007FD4C7 /* SecondViewController.swift */,
-				1ED8D7711D8CA082007FD4C7 /* Main.storyboard */,
+				1ED8D76F1D8CA082007FD4C7 /* Battleship.swift */,
+				A73436EF1D8CE506004E0538 /* BattleshipBrain.swift */,
+				A73436F11D8CE9D3004E0538 /* Main.storyboard */,
 				1ED8D7741D8CA082007FD4C7 /* Assets.xcassets */,
 				1ED8D7761D8CA082007FD4C7 /* LaunchScreen.storyboard */,
 				1ED8D7791D8CA082007FD4C7 /* Info.plist */,
@@ -128,7 +131,7 @@
 			files = (
 				1ED8D7781D8CA082007FD4C7 /* LaunchScreen.storyboard in Resources */,
 				1ED8D7751D8CA082007FD4C7 /* Assets.xcassets in Resources */,
-				1ED8D7731D8CA082007FD4C7 /* Main.storyboard in Resources */,
+				A73436F21D8CE9D3004E0538 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED8D7701D8CA082007FD4C7 /* SecondViewController.swift in Sources */,
+				A73436F01D8CE506004E0538 /* BattleshipBrain.swift in Sources */,
+				1ED8D7701D8CA082007FD4C7 /* Battleship.swift in Sources */,
 				1ED8D76C1D8CA082007FD4C7 /* AppDelegate.swift in Sources */,
 				1ED8D76E1D8CA082007FD4C7 /* FirstViewController.swift in Sources */,
 			);
@@ -148,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1ED8D7711D8CA082007FD4C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ED8D7721D8CA082007FD4C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1ED8D7761D8CA082007FD4C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,6 +299,7 @@
 				1ED8D77E1D8CA082007FD4C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

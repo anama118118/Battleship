@@ -9,17 +9,16 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    //
+    //2 player computer
+    //layout the ship, need double grid
+    //build a computer game with 2 player
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
