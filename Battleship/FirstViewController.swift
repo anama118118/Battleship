@@ -10,7 +10,6 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    //
     //2 player computer
     //layout the ship, need double grid
     //build a computer game with 2 player

@@ -26,11 +26,9 @@ class Battleship: UIViewController {
         self.brain = BattleshipBrain (numCards: self.howManyCards)
         super.init(coder: aDecoder)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     override func viewDidLayoutSubviews() {
         if !loaded {
             setUpGameButtons(v: buttonContainer, totalButtons: self.howManyCards, buttonsPerRow: 10)
@@ -38,7 +36,6 @@ class Battleship: UIViewController {
         }
         loaded = true
     }
-    
     func resetButtonColors() {
         for v in buttonContainer.subviews {
             if let button = v as? UIButton {
@@ -47,7 +44,6 @@ class Battleship: UIViewController {
             }
         }
     }
-    
     func handleReset() {
         resetButtonColors()
         brain.setupCards()
@@ -61,7 +57,6 @@ class Battleship: UIViewController {
             }
         }
     }
-    
     @IBAction func resetTapped(_ sender: UIButton) {
         handleReset()
     }
@@ -74,15 +69,16 @@ class Battleship: UIViewController {
             //            brain.cards[send.tag - 1] = brain.State.beenHit
             brain.hitableToBeenHit(sender.tag - 1)
             sender.backgroundColor = UIColor.red
-            
-        } else if brain.beenHitCards(sender.tag - 1) {
+            if brain.noMoreHitable() {
+                gameLabel.text = "You won! 😄"
+                disableCardButtons()
+            }
+        }
+        else if brain.beenHitCards(sender.tag - 1) {
             gameLabel.text = "Well...You got this part already! 😅"
             sender.backgroundColor = UIColor.red
         }
-        else if brain.noMoreHitable() {
-            gameLabel.text = "You won! 😄"
-            disableCardButtons()
-        } else {
+        else {
             gameLabel.text = "Nope! Guess again. 😓"
             sender.backgroundColor = UIColor.white
         }
@@ -100,7 +96,6 @@ class Battleship: UIViewController {
     func setUpGameLabel () {
         gameLabel.text = "Let's Play!"
     }
-    
     func setUpGameButtons(v: UIView, totalButtons: Int, buttonsPerRow : Int) {
         for i in 1...howManyCards {
             let y = ((i - 1) / buttonsPerRow)
