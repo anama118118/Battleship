@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5i-v0-MPB" userLabel="Grid">
-                                <frame key="frameInset" minX="50" minY="22" width="275" height="275"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5i-v0-MPB" userLabel="Grid">
+                                <frame key="frameInset" minX="43" minY="30" width="275" height="275"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b5i-v0-MPB" secondAttribute="height" multiplier="1:1" id="W2J-mh-67W"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ3-C8-USC">
-                                <frame key="frameInset" minX="16" minY="580" width="96" height="30"/>
+                                <frame key="frameInset" minX="16" minY="571" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ready To Play"/>
                                 <connections>
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evN-at-gg2" userLabel="Grid">
-                                <frame key="frameInset" minX="50" minY="305" width="275" height="275"/>
+                                <frame key="frameInset" minX="43" minY="314" width="275" height="275"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="evN-at-gg2" secondAttribute="height" multiplier="1:1" id="zJe-rZ-R81"/>
@@ -58,6 +58,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="bdc-rH-YFA" secondAttribute="trailing" id="CRo-Fb-U9a"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="WSH-9H-ETZ" secondAttribute="bottom" id="TJi-5t-dO2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b5i-v0-MPB" secondAttribute="trailing" id="Zuo-Fi-tW4"/>
                             <constraint firstItem="evN-at-gg2" firstAttribute="width" secondItem="evN-at-gg2" secondAttribute="height" multiplier="1:1" id="cop-EU-jiT"/>
                             <constraint firstItem="b5i-v0-MPB" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="eJp-CV-wgN"/>
                             <constraint firstItem="WSH-9H-ETZ" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="k3Q-H2-Nd2"/>
@@ -68,7 +69,6 @@
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="gridView" destination="b5i-v0-MPB" id="c8b-j9-abD"/>
-                        <outlet property="gridView2" destination="evN-at-gg2" id="p6L-7b-TfV"/>
                         <outlet property="messageLabel" destination="WSH-9H-ETZ" id="mYl-tE-HSL"/>
                     </connections>
                 </viewController>
