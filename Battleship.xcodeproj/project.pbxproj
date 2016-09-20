@@ -59,9 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				1ED8D76B1D8CA082007FD4C7 /* AppDelegate.swift */,
+				1E906A691D8F0DF000851B7A /* BattleshipBrain.swift */,
 				1ED8D76D1D8CA082007FD4C7 /* BattleshipViewController.swift */,
 				1ED8D76F1D8CA082007FD4C7 /* SecondViewController.swift */,
-				1E906A691D8F0DF000851B7A /* BattleshipBrain.swift */,
 				1ED8D7711D8CA082007FD4C7 /* Main.storyboard */,
 				1ED8D7741D8CA082007FD4C7 /* Assets.xcassets */,
 				1ED8D7761D8CA082007FD4C7 /* LaunchScreen.storyboard */,
